@@ -16,13 +16,6 @@ function App () {
       <IntlProvider messages={msgs === 'zh' ? zh : en} locale="zh" defaultLocale="en">
         <p>
           <FormattedMessage
-            id="myMessage"
-            defaultMessage="Today is {ts, date, ::yyyyMMdd}"
-            values={{ ts: Date.now() }}
-          />
-        </p>
-        <p>
-          <FormattedMessage
             id="myMessage2"
             defaultMessage="myMessage2 msg"
           />
