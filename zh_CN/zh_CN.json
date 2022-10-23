@@ -1,7 +1,14 @@
 {
     "myMessage2": [
         {
-            "value": "myMessage2 消息23333"
+            "type": "",
+            "value": ""
+        }
+    ],
+    "myMessage3": [
+        {
+            "type": "",
+            "value": "hh好"
         }
     ]
 }
