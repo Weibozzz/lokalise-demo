@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import './App.css'
+import { useState } from 'react'
+import { IntlProvider, FormattedMessage } from 'react-intl'
+import en from './content/compiled-locales/en.json'
+import zh from './content/compiled-locales/zh.json'
+function App () {
+  const [msgs, setMsgs] = useState('en')
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <h1>测试国际化方案</h1>
+      <button onClick={() => setMsgs('zh')}>切换中文</button>
+      <button onClick={() => setMsgs('en')}>切换英文</button>
+      <br/>
+      <br/>
+      <br/>
+      <IntlProvider messages={msgs === 'zh' ? zh : en} locale="zh" defaultLocale="en">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <FormattedMessage
+            id="myMessage"
+            defaultMessage="Today is {ts, date, ::yyyyMMdd}"
+            values={{ ts: Date.now() }}
+          />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          <FormattedMessage
+            id="myMessage2"
+            defaultMessage="myMessage2 msg"
+          />
+        </p>
+        <p>
+          <FormattedMessage
+            id="myMessage3"
+            defaultMessage="myMessage3 msg"
+          />
+        </p>
+      </IntlProvider>
     </div>
-  );
+  )
 }
-
-export default App;
+export default App

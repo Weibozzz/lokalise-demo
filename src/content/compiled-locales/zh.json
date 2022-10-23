@@ -1,0 +1,33 @@
+{
+  "myMessage": [
+    {
+      "type": 0,
+      "value": "今天 is "
+    },
+    {
+      "style": {
+        "parsedOptions": {
+          "day": "2-digit",
+          "month": "2-digit",
+          "year": "numeric"
+        },
+        "pattern": "yyyyMMdd",
+        "type": 1
+      },
+      "type": 3,
+      "value": "ts"
+    }
+  ],
+  "myMessage2": [
+    {
+      "type": 0,
+      "value": "myMessage2 消息"
+    }
+  ],
+  "myMessage3": [
+    {
+      "type": 0,
+      "value": "myMessage3 msg"
+    }
+  ]
+}

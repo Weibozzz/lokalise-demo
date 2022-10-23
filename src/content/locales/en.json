@@ -1,0 +1,5 @@
+{
+  "myMessage": "Today is {ts, date, ::yyyyMMdd}",
+  "myMessage2": "myMessage2 msg",
+  "myMessage3": "myMessage3 msg"
+}
