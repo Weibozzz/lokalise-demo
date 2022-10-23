@@ -2,7 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import { IntlProvider, FormattedMessage } from 'react-intl'
 import en from './content/compiled-locales/en.json'
-import zh from './content/compiled-locales/zh.json'
+import zh from './content/compiled-locales/zh_CN.json'
 function App () {
   const [msgs, setMsgs] = useState('en')
   return (
