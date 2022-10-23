@@ -1,7 +1,14 @@
 {
     "myMessage2": [
         {
-            "value": "myMessage2 消息23333"
+            "type": "0",
+            "value": "myMessage2 消息   lokalise 哈哈"
+        }
+    ],
+    "myMessage3": [
+        {
+            "type": "0",
+            "value": "myMessage3 msg"
         }
     ]
 }
