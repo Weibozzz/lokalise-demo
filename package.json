@@ -18,7 +18,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "extract": "formatjs extract \"src/**/*.{js,ts,tsx,vue}\" --format simple --id-interpolation-pattern \"[sha512:contenthash:base64:6]\" --out-file src/content/locales/en.json",
+    "extract": "formatjs extract \"src/**/*.{js,ts,tsx,vue}\" --format lokalise --id-interpolation-pattern \"[sha512:contenthash:base64:6]\" --out-file src/content/en.json",
     "compile": "formatjs compile-folder  --ast --format simple src/content/locales src/content/compiled-locales",
     "eject": "react-app-rewired eject"
   },
