@@ -1,4 +1,14 @@
 {
-  "myMessage2": "myMessage2 msg",
-  "myMessage3": "myMessage3 msg"
+    "myMessage2": [
+        {
+            "type": "0",
+            "value": "myMessage2 msg"
+        }
+    ],
+    "myMessage3": [
+        {
+            "type": "0",
+            "value": "myMessage3 msg"
+        }
+    ]
 }
